@@ -41,6 +41,19 @@ abstract final class AutofillHints {
   /// * Otherwise, the hint string will be used as-is.
   static const String addressState = 'addressState';
 
+  /// The input field expects a one-time code from an authenticator app.
+  ///
+  /// This hint will be translated to the below values on different platforms:
+  ///
+  /// * Android: [AUTOFILL_HINT_2FA_APP_OTP](https://developer.android.com/reference/androidx/autofill/HintConstants#AUTOFILL_HINT_2FA_APP_OTP).
+  /// * Otherwise, the hint string will be used as-is.
+  ///
+  /// See also:
+  ///
+  ///  * [oneTimeCode], for a one-time code delivered by SMS.
+  ///  * [emailOTPCode], for a one-time code delivered by email.
+  static const String authenticatorAppOTPCode = 'authenticatorAppOTPCode';
+
   /// The input field expects a person's full birth date.
   ///
   /// This hint will be translated to the below values on different platforms:

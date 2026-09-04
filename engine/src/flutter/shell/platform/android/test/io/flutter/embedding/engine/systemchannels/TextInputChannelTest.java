@@ -83,6 +83,18 @@ public class TextInputChannelTest {
   @Test
   @TargetApi(API_LEVELS.API_26)
   @Config(sdk = API_LEVELS.API_26)
+  public void configurationFromJsonTranslatesAuthenticatorAppOTPCodeAutofillHint()
+      throws JSONException, NoSuchFieldException {
+    final TextInputChannel.Configuration configuration =
+        TextInputChannel.Configuration.fromJson(
+            createConfigurationJsonWithAutofillHint("authenticatorAppOTPCode"));
+
+    assertArrayEquals(new String[] {"2faAppOTPCode"}, configuration.autofill.hints);
+  }
+
+  @Test
+  @TargetApi(API_LEVELS.API_26)
+  @Config(sdk = API_LEVELS.API_26)
   public void configurationFromJsonTranslatesOneTimeCodeAutofillHint()
       throws JSONException, NoSuchFieldException {
     final TextInputChannel.Configuration configuration =

@@ -583,6 +583,8 @@ public class TextInputChannel {
             return "addressLocality";
           case "addressState":
             return "addressRegion";
+          case "authenticatorAppOTPCode":
+            return "2faAppOTPCode";
           case "birthday":
             return "birthDateFull";
           case "birthdayDay":

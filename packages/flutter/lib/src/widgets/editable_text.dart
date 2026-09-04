@@ -2279,6 +2279,7 @@ class EditableText extends StatefulWidget {
             AutofillHints.addressCity: TextInputType.name,
             AutofillHints.addressCityAndState: TextInputType.name, // Autofill not working.
             AutofillHints.addressState: TextInputType.name,
+            AutofillHints.authenticatorAppOTPCode: TextInputType.text,
             AutofillHints.countryName: TextInputType.name,
             AutofillHints.creditCardNumber: TextInputType.number, // Couldn't test.
             AutofillHints.email: TextInputType.emailAddress,
@@ -2327,6 +2328,7 @@ class EditableText extends StatefulWidget {
       AutofillHints.addressCity: TextInputType.streetAddress,
       AutofillHints.addressCityAndState: TextInputType.streetAddress,
       AutofillHints.addressState: TextInputType.streetAddress,
+      AutofillHints.authenticatorAppOTPCode: TextInputType.text,
       AutofillHints.birthday: TextInputType.datetime,
       AutofillHints.birthdayDay: TextInputType.datetime,
       AutofillHints.birthdayMonth: TextInputType.datetime,
